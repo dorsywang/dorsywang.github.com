@@ -93,7 +93,7 @@ h6 {
   font-size: 16px;
 }
 
-#main_content p {
+#main_content .content {
   margin: 10px 0 15px 0;
   background: #fff;
   color: #928F8F;
