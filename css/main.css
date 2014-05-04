@@ -1,0 +1,20 @@
+.nav li{
+    width: 89px;
+    list-style: none;
+    background: rgb(160, 160, 160);
+    display: inline-block;
+    text-align: center;
+    color: #fff;
+    border-top-left-radius: 2px;
+    border-top-right-radius: 2px;
+    height: 30px;
+    line-height: 30px;
+    margin-right: 10px;
+    cursor: pointer;
+}
+.nav li a{
+    color: rgb(255, 245, 245);
+    
+    text-decoration: none;
+    display: block;
+}
