@@ -77,10 +77,27 @@
         return result;
     };
 
-    var renderTmpl = function(id, data){
+    //保留上次的el地址，便于清除
+    var lastRenderEls = {};
+
+    var renderTmpl = function(id, data, isAppend){
         var tmplNode = document.getElementById(id);
         var tmplString = tmplNode.innerHTML;
         var result = getTmpl(tmplString, data);
+
+        if(! lastRenderEls[id]) lastRenderEls[id] = [];
+
+        if(! isAppend){
+            //清除上次的渲染
+            for(var i = 0; i < lastRenderEls[id].length; i ++){
+                var lastItem = lastRenderEls[id][i];
+
+                lastItem.parentNode.removeChild(lastItem);
+            }
+        }
+
+        lastRenderEls[id] = [];
+
 
         var div = document.createElement("div");
         div.innerHTML = result;
@@ -88,6 +105,8 @@
         var divChildren = div.childNodes;
 
         while(divChildren.length > 0){
+            lastRenderEls[id].push(divChildren[0]);
+
             tmplNode.parentNode.insertBefore(divChildren[0], tmplNode);
         }
     };
@@ -141,12 +160,50 @@
                 });
     };
 
+    var query = function (n) { 
+            var m = window.location.search.match(new RegExp('(\\?|&)' + n + '=([^&]*)(&|$)'));   
+            return !m ? '' : decodeURIComponent(m[2]);  
+    };
+
+    var getHash = function (n) {
+            var m = window.location.hash.match(new RegExp('(#|&)' + n + '=([^&]*)(&|$)'));
+            return !m ? '' : decodeURIComponent(m[2]);
+    };
+    var parentIs = function(el, parentSelector){
+            if(! el) return;
+            var parentAttribute = "className";
+            var parentValue = parentSelector.replace(/^\./, "");
+            if(/^\./.test(parentSelector)){
+            }else if(/^#/.test(parentSelector)){
+                parentAttribute = "id";
+                parentValue = parentSelector.replace(/^#/, "");
+            }
+
+            var flag = 0;
+
+            function checkParent(el){
+                if(el[parentAttribute] == parentValue){
+                    flag = 1;
+                    return;
+                }else{
+                    if(el.parentNode){
+                        checkParent(el.parentNode);
+                    }else{
+                    }
+                }
+            }
+
+            checkParent(el);
+            return flag;
+    };
 
    var utils = {
         request: initRequest,
         getTmpl: getTmpl,
         renderTmpl: renderTmpl,
-        addEvent: addEvent
+        getHash: getHash,
+        addEvent: addEvent,
+        parentIs: parentIs
     };
 
     window.Utils = utils;

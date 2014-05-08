@@ -1,5 +1,7 @@
 ﻿<?php
-include 'markdown.php';
+require_once('markdown.php');
+require_once('topy.php');
+
 
 //scanfiles
 $dir = "../mdfile/";
@@ -31,6 +33,8 @@ foreach($fileArr as $key => $val){
 
     $file = file_get_contents($dir . $val);
 
+    $pName = $PY->get($title, "gb2312");
+
     $id = uniqid();
 
     $brief_str = substr($file, 0, 150) . "..";
@@ -41,14 +45,36 @@ foreach($fileArr as $key => $val){
         "title" => iconv("gb2312", "utf-8", $title),
         "pubtime" => $time,
         "brief" => Markdown($brief_str),
-        "id" => $id
+        "id" => $id,
+        "pName" => $pName
     );
 
     $result['list'][] = $list;
+
+    make_article($file, $pName);
 }
 
 $fileContent = json_encode($result);
 if(file_put_contents("../data/content.json", $fileContent)){
-    echo "ok";
+    echo "make list OK<br />";
+}
+
+function make_article($file_content, $name){
+    $mks = Markdown($file_content);
+
+    $fileName = "../data/$name.json";
+
+    $list = array(
+        "content" => $mks
+    );
+
+    $fileContent = json_encode($list);
+
+    if(file_put_contents($fileName, $fileContent)){
+        echo "<span style='color: green;'>mkfile: $name, OK</span><br />";
+    }else{
+        echo "<span style='color: red;'>mkfile: $name, Error</span><br />";
+    }
+
 }
 //$data = Markdown(file_get_contents("../mdfile/test.md"));
