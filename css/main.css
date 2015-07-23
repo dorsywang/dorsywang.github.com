@@ -30,3 +30,75 @@
     min-height: 93%;
     display: none;
 }
+
+
+h1 {
+    text-align: center;
+    color: #000;
+    font-size: 33px;
+    font-weight: 100;
+    margin-top: 70px;
+}
+
+ul.projectlist {
+    margin: 0;
+    padding: 0;
+    margin-top: 70px;
+}
+
+ul.projectlist li {
+    margin: 0;
+    list-style: none;
+    color: #000;
+    font-size: 25px;
+    text-align: center;
+    cursor: pointer;
+    -webkit-transition: all ease-in 0.1s;
+    padding: 8px 0;
+}
+
+html,body {
+    background-color: #E8E8E8;
+    font-family: Microsoft Yahei;
+    padding: 0;
+    margin: 0;
+}
+
+h2 {
+    font-size: 22px;
+    font-weight: 100;
+    margin: 0;
+    padding: 5px 0;
+}
+
+.subinfo {
+    color: #A5A5A5;
+    font-size: 16px;
+    margin: 0;
+}
+
+a {
+    text-decoration: none;
+    color: #FFFFFF;
+}
+
+.projectlist li:hover {
+    background-color: #00BDC5;
+    color: #fff;
+}
+
+li:hover .subinfo {
+    color: #FFFFFF;
+}
+
+h1 {
+    text-align: center;
+}
+
+.spliter {
+    width: 80%;
+    height: 1px;
+    background-color: #ccc;
+    margin: 0 auto;
+    margin-top: 90px;
+}
