@@ -41,7 +41,6 @@ h1 {
 }
 
 ul.projectlist {
-    margin: 0;
     padding: 0;
     margin-top: 70px;
 }
@@ -101,4 +100,9 @@ h1 {
     background-color: #ccc;
     margin: 0 auto;
     margin-top: 90px;
+}
+
+.wrapper {
+    width: 1000px;
+    margin: 0 auto;
 }
