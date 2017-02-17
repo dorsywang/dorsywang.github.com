@@ -1,0 +1,76 @@
+nav {
+    background: rgba(0, 0, 0, 0.68);
+    color: #fff;
+    height: 50px;
+    line-height: 50px;
+    position: absolute;
+    width: 100%;
+    z-index: 11;
+}
+
+html, body {
+    margin: 0;
+    padding: 0;
+    font-family: Microsoft Yahei;
+    font-size: 14px;
+    height: 100%;
+}
+
+nav li {
+    display: inline-block;
+}
+
+section.main {
+    background: #d2d2d2 url(img/bg1.jpg) no-repeat;
+    height: 100%;
+    background-size: cover;
+    overflow: hidden;
+}
+
+section.main:before {
+    content: '';
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background: rgba(0, 0, 0, 0.48);
+}
+
+.content {
+    position: relative;
+    z-index: 1;
+    margin-top: 91px;
+    padding: 1px 19px;
+    width: 100%;
+}
+
+.tile {
+    width: 240px;
+    height: 160px;
+    background: #fff;
+    text-align: center;
+    border-radius: 0px;
+    float: left;
+    vertical-align: top;
+    margin: 7px 4px;
+    box-shadow: 0px 0px 3px 3px rgba(72, 72, 72, 0.49);
+    position: relative;
+    transition: all ease-in-out 0.4s;
+}
+
+.tile img {
+    width: 201px;
+}
+
+.tile:after {content: '';position: absolute;left: 0;top: 0;width: 100%;height: 100%;background: rgba(0, 0, 0, 0.53);z-index: 1;cursor: pointer;transition: background-color ease-in-out 0.3s;}
+
+.tile.active:after,.tile:hover:after {
+    background: rgba(0, 0, 0, 0);
+}
+
+
+.tile:hover {
+    box-shadow: 0 0 11px 3px rgba(199, 23, 81, 0.51);
+    border-radius: 13px;
+}

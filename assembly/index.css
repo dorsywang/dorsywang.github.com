@@ -1,0 +1,404 @@
+section.layer.layer1 {}
+
+.sky {
+    background: rgb(0, 85, 136);
+    height: 660px;
+    position: relative;
+}
+
+.cloud {
+    background: url(img/cloud.png) repeat-x;
+    width: 100%;
+    height: 100px;
+    position: absolute;
+    bottom: -34px;
+}
+
+body {
+    background: #dcddcd;
+    margin: 0;
+    padding: 0;
+    font-family: Microsoft Yahei;
+    font-size: 14px;
+    overflow: auto;
+}
+
+.blank {
+    height: 760px;
+}
+
+.moutain {
+    background: #a68f58;
+    height: 810px;
+    position: relative;
+}
+
+.moutain_header {
+    background: url(img/moutain.png) repeat-x;
+    height: 200px;
+    position: absolute;
+    top: -77px;
+    width: 100%;
+}
+
+.littlecloud {
+    background: url(img/littlecloud.png) no-repeat;
+    width: 100px;
+    height: 100px;
+    background-size: 100%;
+    position: absolute;
+    /* top: 803px; */
+    left: 111px;
+}
+
+section.layer {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    transition: transform ease-out 1.2s;
+}
+
+nav {
+    list-style: none;
+    background: rgba(0, 0, 0, 0.6);
+    height: 37px;
+}
+
+nav li {
+    display: inline-block;
+    color: white;
+    padding: 6px 16px;
+}
+
+nav li.left {
+    float: left;
+}
+
+nav li.right {
+    float: right;
+}
+
+.main h1 {
+    clear: both;
+    text-align: center;
+    font-size: 72px;
+    font-weight: normal;
+    color: white;
+    margin: 0;
+    margin-top: 261px;
+}
+
+.benifit li {
+    text-align: center;
+    font-size: 24px;
+    color: #fff;
+    height: 164px;
+}
+
+.benifit {
+    margin-top: 571px;
+}
+
+img {}
+
+img.logo {
+    width: 320px;
+}
+
+p.sub {
+    text-align: center;
+    color: #fff;
+    font-size: 20px;
+    margin: 0;
+    margin-top: -8px;
+    font-weight: 100;
+}
+
+.join {
+    text-align: center;
+    margin-top: 21px;
+}
+
+.btn {
+    display: inline-block;
+    border: 1px solid #fff;
+    border-radius: 5px;
+    color: #fff;
+    padding: 8px 11px;
+    cursor: pointer;
+}
+
+.rockectBg {
+    background: rgb(107,111, 222);
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    position: absolute;
+    top: 770px;
+    margin-left: -354px;
+}
+
+.hor-center {
+    left: 50%;
+    transform: translate(-50%, 0);
+}
+
+span.rockectItem {
+    display: inline-block;
+    width: 200px;
+    height: 200px;
+    background: url(img/rockect.png) no-repeat;
+    background-size: 100%;
+}
+
+.rockect {
+    position: absolute;
+    top: 771px;
+    text-align: center;
+    margin-left: -357px;
+}
+
+.withdraw {
+    border: 6px solid #ecf1f2;
+    padding: 3px 29px;
+    background: rgb(71, 71, 71);
+    margin-top: -25px;
+    border-radius: 3px;
+    position: relative;
+    z-index: 11;
+}
+
+p.subintro {
+    color: #969696;
+    text-shadow: 0px 2px 3px #333333;
+}
+
+.withdraw h2 {
+    font-weight: normal;
+    font-size: 22px;
+    color: #dadada;
+    text-shadow: 0px 3px 8px #2a2a2a;
+}
+
+.rockect.commucation {
+    /* top: 1280px; */
+    margin-left: 244px;
+}
+
+.rockect.enchance {
+    top: 1227px;
+}
+
+.rockect.face2face {
+    top: 1228px;
+    margin-left: 250px;
+}
+
+.rockectBg.commucationBg {
+    /* top: 1201px; */
+    margin-left: 245px;
+}
+
+.rockectBg.enchanceBg {
+    top: 1187px;
+}
+
+.rockectBg.face2faceBg {
+    top: 1188px;
+    margin-left: 250px;
+}
+
+.rockect.commucation .rockectItem {
+    background-image: url(img/handshake.png);
+    background-size: 80%;
+    background-position: center 72px;
+    position: relative;
+    z-index: 1111;
+    margin-top: -19px;
+}
+
+.enchance span.rockectItem {
+    background-image: url(img/increase.png);
+    background-size: 75%;
+    background-position: center center;
+}
+
+.face2face .rockectItem {
+    background-image: url(img/face2face.png);
+    background-size: 72%;
+    background-position: center;
+}
+
+.hide {
+    display: none;
+}
+
+.moutainitem {
+    width: 170px;
+    height: 150px;
+    background: url(img/moutain/1.png) no-repeat;
+    position: absolute;
+    left: 10%;
+    background-size: 100%;
+}
+
+.smallmoutain {
+    position: absolute;
+    top: 1859px;
+    width: 100%;
+}
+
+.moutainitem.item1 {
+    left: 30%;
+    background-image: url(img/moutain/2.png);
+}
+
+.moutainitem.item1 {}
+
+.moutainitem.item2 {.moutainitem.item1 {
+    left: 290px;
+    background-image: url(img/moutain/2.png);  }
+    background-image: u;
+    left: 60%;
+    background-image: url(img/moutain/3.png);
+}
+
+.moutainitem.item3 {
+    background-image: url(img/moutain/4.png);
+    left: 80%;
+}
+
+.smallmoutain2 {
+    top: 2063px;
+}
+
+.moutainitem.item5{
+    background-image: url(img/moutain/5.png);
+    left: 2%;
+}
+
+.moutainitem.item6{
+    background-image: url(img/moutain/6.png);
+    left: 19%;
+}
+
+.moutainitem.item7{
+    background-image: url(img/moutain/7.png);
+    left: 40%;
+}
+.moutainitem.item8{
+    background-image: url(img/moutain/8.png);
+    left: 60%;
+}
+.moutainitem.item9{
+    background-image: url(img/moutain/9.png);
+    left: 83%;
+}
+
+
+.intro {
+    position: absolute;
+    top: 2202px;
+    padding: 22px 72px;
+    width: 1200px;
+}
+
+.intro h3 {
+    color: #ffdd88;
+}
+
+.joined {
+}
+
+.joinedItem img {
+    width: 230px;
+}
+
+li.joinedItem {
+    list-style: none;
+    text-align: center;
+    display: inline-block;
+    margin-top: 12px;
+    border: 1px solid #8c794a;
+    padding: 9px 23px;
+    border-radius: 4px;
+}
+
+.joinedItem h4 {
+    color: #efefef;
+    font-weight: normal;
+}
+
+.joined ul {
+    margin: 0;
+    padding: 0;
+}
+
+footer {
+    background: rgba(0, 0, 0, 0.74);
+    height: 49px;
+    width: 100%;
+    bottom: 0;
+    position: absolute;
+    top: 2820px;
+    text-align: center;
+    line-height: 49px;
+    color: #cccccc;
+    font-size: 12px;
+}
+
+section#layer3 {
+    /* position: absolute; */
+}
+
+.layer1,.layer2{
+}
+
+
+html,body {
+    height: 100%;
+}
+.mask{position: absolute;top: 0;height: 2865px;width: 100%;z-index: -1;}
+
+
+.cloudWrapper {
+    top: 699px;
+    position: absolute;
+    left: 0;
+    width: 100%;
+    display: none;
+}
+
+.littlecloud.item2 {
+    width: 134px;
+    left: 332px;
+}
+
+.littlecloud.item3 {
+    left: 48%;
+    width: 120px;
+}
+
+.plainIntro {
+    position: absolute;
+    top: 390px;
+    color: #fff;
+}
+
+.plainIntro {}
+
+.main {
+    position: absolute;
+    top: -132px;
+    margin-left: -67px;
+}
+
+.plainIntro h2 {
+    font-weight: normal;
+}
+
+.smallmoutain2 .smallmoutain {}
+
+.smallmoutain2 .moutainitem {
+    width: 260px;
+}

@@ -1,0 +1,206 @@
+<!DOCTYPE HTML>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title></title>
+
+  <link media="all" rel="stylesheet" href="list.css" type="text/css" />
+</head>
+<body>
+
+<nav>
+  <li>关于高校联盟</li>
+  <li>AlloyTeam名人榜</li>
+  <li>前端培训营</li>
+</nav>
+
+<section class="main">
+  <div class="content">
+    <div class="tile">
+      <img src="img/timi.png" alt="" />
+    </div>
+
+    <div class="tile">
+      <img src="img/timi.png" alt="" />
+    </div>
+    
+    <div class="tile">
+      <img src="img/timi.png" alt="" />
+    </div>
+
+    <div class="tile">
+      <img src="img/timi.png" alt="" />
+    </div>
+     
+    <div class="tile">
+      <img src="img/timi.png" alt="" />
+    </div>
+    
+
+    <div class="tile">
+      <img src="img/timi.png" alt="" />
+    </div>
+
+    <div class="tile">
+      <img src="img/timi.png" alt="" />
+    </div>
+
+    <div class="tile">
+      <img src="img/timi.png" alt="" />
+    </div>
+
+    <div class="tile">
+      <img src="img/timi.png" alt="" />
+    </div>
+
+    <div class="tile">
+      <img src="img/timi.png" alt="" />
+    </div>
+
+
+    <div class="tile">
+      <img src="img/timi.png" alt="" />
+    </div>
+
+    <div class="tile">
+      <img src="img/timi.png" alt="" />
+    </div>
+
+    <div class="tile">
+      <img src="img/timi.png" alt="" />
+    </div>
+
+    <div class="tile">
+      <img src="img/timi.png" alt="" />
+    </div>
+
+    <div class="tile">
+      <img src="img/timi.png" alt="" />
+    </div>
+
+
+    <div class="tile">
+      <img src="img/timi.png" alt="" />
+    </div>
+
+
+    <div class="tile">
+      <img src="img/timi.png" alt="" />
+    </div>
+
+
+    <div class="tile">
+      <img src="img/timi.png" alt="" />
+    </div>
+
+
+      <div class="tile">
+      <img src="img/timi.png" alt="" />
+    </div>
+
+    <div class="tile">
+      <img src="img/timi.png" alt="" />
+    </div>
+
+    <div class="tile">
+      <img src="img/timi.png" alt="" />
+    </div>
+
+    <div class="tile">
+      <img src="img/timi.png" alt="" />
+    </div>
+
+    <div class="tile">
+      <img src="img/timi.png" alt="" />
+    </div>
+
+
+    <div class="tile">
+      <img src="img/timi.png" alt="" />
+    </div>
+
+
+    <div class="tile">
+      <img src="img/timi.png" alt="" />
+    </div>
+
+    <!--
+
+    <div class="tile">
+      <img src="img/timi.png" alt="" />
+    </div>
+
+
+    <div class="tile">
+      <img src="img/timi.png" alt="" />
+    </div>
+
+
+    <div class="tile">
+      <img src="img/timi.png" alt="" />
+    </div>
+
+
+    <div class="tile">
+      <img src="img/timi.png" alt="" />
+    </div>
+
+    <div class="tile">
+      <img src="img/timi.png" alt="" />
+    </div>
+    -->
+  </div>
+
+</section>
+
+<script type="text/javascript">
+
+var tiles = document.querySelectorAll('.tile');
+
+var doHighlight = function(){
+    var activeLen = 1;//~~ (Math.random() * 5);
+
+    var indexArr = [];
+
+    for(var i = 0; i < activeLen; i ++){
+        indexArr.push(~~ (Math.random() * tiles.length));
+    }
+
+    [].map.call(tiles, function(item){
+          item.classList.remove('active');
+    });
+
+    indexArr.map(function(index){
+      tiles[index].classList.add('active');
+    });
+};
+
+var doUnHighlight = function(){
+   [].map.call(tiles, function(item){
+          item.classList.remove('active');
+    });
+};
+
+
+// doHighlight();
+
+var run = function(){
+  return;
+
+  doHighlight();
+
+  
+  setTimeout(function(){
+      doUnHighlight();
+      setTimeout(run, 4000);
+
+  }, 700);
+
+};
+
+run();
+
+</script>
+	
+</body>
+</html>
