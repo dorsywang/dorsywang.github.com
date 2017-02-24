@@ -57,14 +57,61 @@
       <p class="sub">League Of University WorkStudio</p>
 
       <div class="join">
-        <div class="btn">立即报名参与</div>
+        <div class="btn" id="joinBtn">立即报名参与</div>
       </div>
   </div>
 
   <div class="benifit">
-    
+        <li>
+          <div class="wrapper">
+              <div class="left">
+                <img src="img/motion.png" alt="" />
+              </div>
 
+              <div class="left">
+                <h3>了解AlloyTeam高校联盟</h3>
+
+                <div class="subintro">
+      工作室联盟是由AlloyTeam前端团队发起的，面向全国高校工作室学生的联盟组织。AlloyTeam高校联盟致力于创建一个精品联盟，缩短一线的前沿技术与高校学生之间的距离，与此同时，也为高校工作室之间搭建一个沟通的桥梁。
+                </div>
+              </div>
+          </div>
+        </li>
+
+        <li>
+          <div class="wrapper">
+              <div class="right">
+                <img src="img/benefits.jpg" alt="" />
+              </div>
+
+              <div class="right">
+                <h3>AlloyTeam高校联盟的优势</h3>
+
+                <div class="subintro">
+                  加入AlloyTeam联盟除了可以获得最新的技术信息，不仅如此，还有机会获得BAT的招聘的绿色通道; 参与在AlloyTeam其他技术项目中获得更快速的技术成长;有机会与AlloyTeam最明星的开发工程师们一对一交流
+                </div>
+              </div>
+          </div>
+        </li>
+
+
+        <li>
+          <div class="wrapper">
+              <div class="left">
+                <img src="img/join.jpg" alt="" />
+              </div>
+
+              <div class="left">
+                <h3>如何加入AlloyTeam高校联盟</h3>
+
+                <div class="subintro">
+                  如果你来自全国任意一所高校，并且来自计算机、软件相关的工作室组织，那么就可以邀请工作室学生负责人报名参加AlloyTeam高校联盟, 通过AlloyTeam联盟组织审核后就可以完成参加
+                </div>
+              </div>
+          </div>
+        </li>
   </div>
+
 
   <div class="rockect hor-center">
     <span class="rockectItem"></span>
@@ -150,37 +197,44 @@
   </div>
 
   <div class="intro hor-center">
-    <h3>进一步了解高校联盟计划</h3>
-    <p>高校联盟计划是AlloyTeam推出的面向高校工作室的项目， 旨在为全国高校工作室提供一个交流的平台</p>
+    <div class="wrapper">
+        <h3>进一步了解AlloyTeam团队</h3>
+        <p>
+腾讯AlloyTeam前身是2008年成立的腾讯WebQQ团队，
+于2011年10.24正式以<腾讯AlloyTeam>对外合作交流，
+AlloyTeam的寓意是：
+像合金一样将各种技术，以及各个成员的聪明才智聚合在一起，从而产生更强的合金特性！
+        </p>
 
-    <h3>如何加入高校联盟计划</h3>
-    <p>点击参加按钮，并加入AlloyTeam高校联盟公众群，即可加入高校联盟</p>
+        <h3>如何加入高校联盟计划</h3>
+        <p>点击参加按钮，并加入AlloyTeam高校联盟公众群，即可加入高校联盟</p>
 
-     <div class="joined">
-      <h3>已经加入的工作室</h3>
+         <div class="joined">
+          <h3>已经加入的工作室</h3>
 
-      <ul>
-        <li class="joinedItem">
-          <img src="img/timi.png" alt="" />
-          <h4>xxx工作室</h4>
-        </li>
+          <ul>
+            <li class="joinedItem">
+              <img src="img/timi.png" alt="" />
+              <h4>xxx工作室</h4>
+            </li>
 
 
-         <li class="joinedItem">
-          <img src="img/timi.png" alt="" />
-          <h4>xxx工作室</h4>
-        </li>
+             <li class="joinedItem">
+              <img src="img/timi.png" alt="" />
+              <h4>xxx工作室</h4>
+            </li>
 
-         <li class="joinedItem">
-          <img src="img/timi.png" alt="" />
-          <h4>xxx工作室</h4>
-        </li>
+             <li class="joinedItem">
+              <img src="img/timi.png" alt="" />
+              <h4>xxx工作室</h4>
+            </li>
 
-         <li class="joinedItem">
-          <img src="img/timi.png" alt="" />
-          <h4>xxx工作室</h4>
-        </li>
-      </ul>
+             <li class="joinedItem">
+              <img src="img/timi.png" alt="" />
+              <h4>xxx工作室</h4>
+            </li>
+          </ul>
+        </div>
     </div>
   </div>
 
@@ -192,7 +246,79 @@ AlloyTeam ·高校联盟
  
 </section>
 
+
 <div class="mask" id="mask"></div>
+
+<div class="dialog" id="dialog" style="display:none">
+  <div class="dialogHeader"></div>
+  <div class="dialogContent">
+    <h2>加入高校联盟</h2>
+    <div class="form">
+      <li>
+        <div class="label">工作室名称</div>
+
+        <div class="text">
+          <input type="" />
+        </div>
+      </li>
+
+      <li>
+        <div class="label">所属高校</div>
+
+        <div class="text">
+          <input type="" />
+        </div>
+      </li>
+
+      <li>
+       <div class="label">负责人</div>
+
+        <div class="text">
+          <input type="" />
+        </div>
+     
+      </li>
+
+      <li>
+       <div class="label">联系手机</div>
+
+        <div class="text">
+          <input type="" />
+        </div>
+     
+      </li>
+
+      <li>
+       <div class="label">微信/QQ</div>
+
+        <div class="text">
+          <input type="" />
+        </div>
+     
+      </li>
+
+      <li>
+       <div class="label">工作室主页（如有）</div>
+
+        <div class="text">
+          <input type="" />
+        </div>
+     
+      </li>
+
+
+    </div>
+
+    <div class="submit">
+      <div class="btn commit cancel" id="cancelSubmit">取消</div>
+      <div class="btn commit" id="submit">报名</div>
+    </div>
+  </div>
+</div>
+
+<div class="grayMask"></div>
+
+<script type="text/javascript" src="lib/jquery-1.8.2.js"></script>
 <script type="text/javascript" src="index.js"></script>
 </body>
 </html>

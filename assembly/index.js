@@ -10,10 +10,12 @@ var layer1, layer2, layer3;
 function onLoad()
 {
 
+
     layer1 = document.getElementById('layer1');
     layer2 = document.getElementById('layer2');
     layer3 = document.getElementById('layer3');
 
+return;
     var el = document.querySelector('#bg');
     var svg = document.createElementNS('http://www.w3.org/2000/svg', 'svg');
     svg.setAttribute('width', el.offsetWidth);
@@ -155,3 +157,21 @@ document.addEventListener('scroll', function(e){
     }
 });
 
+var dialog = $('#dialog');
+var grayMask = $(".grayMask");
+
+$('#joinBtn').on('click',  function(){
+
+    dialog.show();
+    grayMask.show();
+});
+
+$('#cancelSubmit').on('click', function(){
+    dialog.hide();
+    grayMask.hide();
+});
+
+document.getElementById('submit').onclick = function(){
+    
+    dialog.style.display = 'none';
+};
