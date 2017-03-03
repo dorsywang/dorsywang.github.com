@@ -1,68 +1,128 @@
-<!DOCTYPE html>
-<html>
+
+<!DOCTYPE HTML>
+<html lang="en">
 <head>
-	<meta charset="utf-8">
-	<title>高校联盟</title>
-	<link rel="stylesheet" type="text/css" href="./css/index.css">
+	<meta charset="UTF-8">
+	<title></title>
+  <link media="all" rel="stylesheet" href="index.css" type="text/css" />
 </head>
 <body>
-	<section class="nav">
-		<span class="logo"></span>
-		<ul class="nav-ul">
-			<li class="nav-li">首页</li>
-			<li class="nav-li">名人堂</li>
-			<li class="nav-li">前端训练营</li>
-			<li class="nav-li">开源作品</li>
-			<li class="nav-li">博客</li>
-		</ul>
-	</section>
-	<section class="head-img">
-		<p class="head-name-img"></p>
-	</section>
-	<section class="my-list">
-		<div class="list-con">
-			<ul class="list-ul">
-				<li class="list-li">
-					<img class="school-logo" src="./img/University.jpg">
-					<p class="school-bg"></p>
-					<span class="school-name">武汉大学</span>
-					<p class="school-intro">这是我们的介绍发的说法阿斯蒂芬暗室逢灯暗室逢灯按时</p>
-				</li>
-				<li class="list-li">
-					<img class="school-logo" src="./img/University.jpg">
-					<p class="school-bg"></p>
-					<span class="school-name">武汉大学</span>
-					<p class="school-intro">这是我们的介绍发的说法阿斯蒂芬暗室逢灯暗室逢灯按时</p>
-				</li>
-				<li class="list-li">
-					<img class="school-logo" src="./img/University.jpg">
-					<p class="school-bg"></p>
-					<span class="school-name">武汉大学</span>
-					<p class="school-intro">这是我们的介绍发的说法阿斯蒂芬暗室逢灯暗室逢灯按时</p>
-				</li>
-				<li class="list-li">
-					<img class="school-logo" src="./img/University.jpg">
-					<p class="school-bg"></p>
-					<span class="school-name">武汉大学</span>
-					<p class="school-intro">这是我们的介绍发的说法阿斯蒂芬暗室逢灯暗室逢灯按时</p>
-				</li>
-				<li class="list-li">
-					<img class="school-logo" src="./img/University.jpg">
-					<p class="school-bg"></p>
-					<span class="school-name">武汉大学</span>
-					<p class="school-intro">这是我们的介绍发的说法阿斯蒂芬暗室逢灯暗室逢灯按时</p>
-				</li>
-				<li class="list-li">
-					<img class="school-logo" src="./img/University.jpg">
-					<p class="school-bg"></p>
-					<span class="school-name">武汉大学</span>
-					<p class="school-intro">这是我们的介绍发的说法阿斯蒂芬暗室逢灯暗室逢灯按时</p>
-				</li>
-			</ul>
-		</div>
-	</section>
-	<section class="footer">
-		<p class="foot-link">Copyright@alloyteam 2017</p>
-	</section>
+
+<section class="layer layer1" id="layer1">
+  <div class="sky" id="bg">
+  </div>
+</section>
+
+<section class="layer layer2" id="layer2"></section>
+
+<section class="layer layer3" id="layer3">
+  <nav>
+    <li class="left">关于AlloyTeam</li>
+    <li class="right">加入联盟</li>
+  </nav>
+
+  <div class="main hor-center">
+    <h1>
+      <img class="logo" src="../img/league.png" alt="" />
+    </h1>
+      <p class="sub">League Of University WorkStudio</p>
+
+      <div class="join">
+        <div class="btn" id="joinBtn">立即报名参与</div>
+      </div>
+  </div>
+
+
+  <section class="my-list" id="my-list">
+    <h2>
+      <div class="wrap">
+        已入驻高校工作室
+      </div>
+    </h2>
+    <div class="list-con">
+      <ul class="list-ul" id="list-ul">
+
+      </ul>
+    </div>
+  </section>
+ 
+</section>
+
+
+<div class="mask" id="mask"></div>
+
+<div class="dialog" id="dialog" style="display:none">
+  <div class="dialogHeader"></div>
+  <div class="dialogContent">
+    <h2>加入高校联盟</h2>
+    <div class="form">
+      <li>
+        <div class="label">工作室名称</div>
+
+        <div class="text">
+          <input type="" />
+        </div>
+      </li>
+
+      <li>
+        <div class="label">所属高校</div>
+
+        <div class="text">
+          <input type="" />
+        </div>
+      </li>
+
+      <li>
+       <div class="label">负责人</div>
+
+        <div class="text">
+          <input type="" />
+        </div>
+     
+      </li>
+
+      <li>
+       <div class="label">联系手机</div>
+
+        <div class="text">
+          <input type="" />
+        </div>
+     
+      </li>
+
+      <li>
+       <div class="label">微信/QQ</div>
+
+        <div class="text">
+          <input type="" />
+        </div>
+     
+      </li>
+
+      <li>
+       <div class="label">工作室主页（如有）</div>
+
+        <div class="text">
+          <input type="" />
+        </div>
+     
+      </li>
+
+
+    </div>
+
+    <div class="submit">
+      <div class="btn commit cancel" id="cancelSubmit">取消</div>
+      <div class="btn commit" id="submit">报名</div>
+    </div>
+  </div>
+</div>
+
+<div class="grayMask"></div>
+
+<script type="text/javascript" src="../lib/jquery-1.8.2.js"></script>
+<script type="text/javascript" src="../lib/trianglify.min.js"></script>
+<script type="text/javascript" src="index.js"></script>
+
 </body>
 </html>
