@@ -20,7 +20,7 @@ body {
 
 
 section.layer {
-    position: fixed;
+    position: absolute;
     top: 0;
     width: 100%;
     transition: transform ease-out 1.2s;
@@ -307,12 +307,12 @@ div#bg:before {
 li{
     list-style: none;
 }
-.my-list{   
+.my-list{
     margin-top: 403px;
     position: absolute;
     width: 100%;
     min-height: auto;
-    background-color: #EDEDED;
+    background-color: #ffffff;
     z-index: 100;
 }
 .list-con{
@@ -331,47 +331,44 @@ li{
     float: left;
     margin-left: 32px;
     margin-bottom: 32px;
-    width: 260px;
-    height: 196px;
-    /* box-shadow: 2px 2px 2px #ccc; */
-    background-color: #fff;
+    width: 365px;
+    height: 317px;
     cursor: pointer;
     transition: all ease-in 0.2s;
+    overflow: hidden;
 }
 .list-li-default{
     background-color: #f2f2f2;
 }
 
 .school-logo{
-    width: 80px;
-    height: 80px;
-    border-radius: 40px;
-    position: absolute;
-    top: -12px;
-    left: -12px;
-    z-index: 10;
+    width: 100%;
+    height: 220px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    transition: all ease 0.3s;
 }
 .div-cont{
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 260px;
-    height: 48px;
-    display:flex;
-    justify-content:center;
-    align-items: center;
+    justify-content: left;
+    align-items: left;
+    margin-left: 1px;
+    margin-top: 12px;
+    position: relative;
 }
 .school-name{
-    margin-left: 58px;
+    margin-left: 14px;
     width: 170px;
     line-height: 20px;
-    text-align: center;
+    text-align: left;
     font-size: 16px;
-    color: #191919;
-    text-shadow: 0px 1px 3px rgba(255, 255, 255, .5);
+    color: #333;
     text-overflow: ellipsis;
     overflow: hidden;
     white-space: nowrap;
+    font-weight: normal;
+    line-height: 25px;
+    font-size: 12px;
 }
 .join-us{
     width: 220px;
@@ -388,7 +385,7 @@ li{
 .school-str{
     margin-left: 32px;
     padding-left: 30px;
-    margin-top: -4px;
+    margin-top: 36px;
     font-size: 13px;
     color: #737373;
     height: 20px;
@@ -396,11 +393,11 @@ li{
     text-align: center;
 }
 .school-intro{
-    color: #818181;
-    padding: 13px 21px;
-    font-size: 14px;
+    color: #aaa;
+    padding: 4px 15px;
+    font-size: 12px;
     line-height: 20px;
-    font-family: "微软雅黑", Tahoma, Arial, sans-serif;
+    font-family: "ÃƒÂ¥Ã‚Â¾Ã‚Â®ÃƒÂ¨Ã‚Â½Ã‚Â¯ÃƒÂ©Ã¢â‚¬ÂºÃ¢â‚¬Â¦ÃƒÂ©Ã‚Â»Ã¢â‚¬Ëœ", Tahoma, Arial, sans-serif;
     
     //
     text-overflow: ellipsis;
@@ -408,7 +405,6 @@ li{
     overflow: hidden;
     //
     white-space: nowrap;
-    height: 90px;
     overflow: hidden;
 }
 .footer{
@@ -427,23 +423,72 @@ li{
 }
 
 .my-list h2 {
-    text-align: left;
+    text-align: center;
     /* width: 1200px; */
     font-weight: normal;
-    font-size: 18px;
-    background: #e2e2e2;
-    color: #2b2b2b;
+    font-size: 32px;
+    color: #333;
     height: 36px;
     line-height: 36px;
+    margin: 37px 0px;
 }
 
 .wrap {
     width: 1200px;
     margin: 0 auto;
-    padding-left: 71px;
     font-size: 16px;
 }
 
 .list-li:hover {
     box-shadow: 2px 2px 2px #ccc; */
+}
+
+.my-list h2 .wrap {
+    font-size: 32px;
+}
+
+.subtitle {
+    font-size: 14px;
+    color#9a9a9a:;
+    color: #9a9a9a;
+    line-height: 3;
+}
+
+.textWrapper {
+    border: 1px solid #eee;
+    margin-top: 0px;
+    border-top: none;
+    overflow: hidden;
+    height: 96px;
+}
+
+span.tel {
+    color: #aaa;
+    font-size: 12px;
+    margin-left: 169px;
+}
+
+h3.school-name.name {
+    font-size: 14px;
+}
+
+.school-name.grey {color: #aaa;margin-left: 6px;}
+
+a.link {
+    position: absolute;
+    right: 14px;
+    bottom: 4px;
+    text-decoration: none;
+    font-size: 12px;
+    color: #0f79a9;
+}
+
+.school-logo:hover {
+    transform: scale(1.05);
+}
+
+.imgWrapper {
+    width: 100%;
+    height: 220px;
+    overflow: hidden;
 }

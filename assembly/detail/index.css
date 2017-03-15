@@ -4,23 +4,15 @@
 }
 
 body {
-	display: flex;
-	display: -webkit-flex;
-	display: -ms-flex;
-	min-height: 100vh;
-	flex-direction: column;
-	-webkit-flex-direction: column;
-	-ms-flex-direction: column;
-	background-color: #fafafa;
+	background-color: #fff;
 }
 
 .nav {
-	height: 34px;
+	height: 41px;
 	font-size: 14px;
-	line-height: 30px;
-	background-color: rgba(0, 0, 0, 0.43);
+	line-height: 41px;
+	background-color: rgb(255, 255, 255);
 	padding-left: 20px;
-	position: absolute;
 	width: 100%;
 	z-index: 2;
 }
@@ -34,7 +26,7 @@ body {
 	padding: 0 10px;
 	text-align: center;
 	text-decoration: none;
-	color: #fafafa;
+	color: #333;
 }
 
 .nav a:hover, .nav a:focus, .nav a:active  {
@@ -44,7 +36,7 @@ body {
 
 .basic-info {
 	width: 100%;
-	height: 254px;
+	height: 267px;
 	padding: 0 40px;
 	box-sizing: border-box;
 	background-color: #3c3c3c;
@@ -54,18 +46,17 @@ body {
 }
 
 .basic-info .img-logo {
-	height: 120px;
+	height: 100px;
 	background-repeat: no-repeat;
-	width: 120px;
+	width: 100px;
 	background-position: center;
 	background-color: #ffffff;
-	background-image: url(../img/logo.png);
-	border-radius: 50%;
-	background-size: contain;
-	border: 6px solid rgb(199, 199, 199);
-	display: inline-block;
+	background-image: url(https://avatars3.githubusercontent.com/u/1025117?v=3&s=460);
 	vertical-align: top;
-	margin: 30px 64px;
+	margin: 0px auto;
+	margin-top: 40px;
+	border-radius: 50%;
+	border: 3px solid rgba(255, 255, 255, 0.68);
 }
 
 .basic-info .profile {
@@ -75,10 +66,10 @@ body {
 	color: #949494;
 	//
 	background-color: #b3e5fc;
-	display: inline-block;
 	vertical-align: top;
-	margin: 40px -62px;
+	margin: 13px auto;
 	line-height: 31px;
+	text-align: center;
 }
 
 .basic-info .intro {
@@ -93,7 +84,7 @@ body {
 	vertical-align: top;
 	margin: 22px 92px;
 	border: 1px solid #6b6b6b;
-	color: #dcdcdc;
+	color: #000000;
 	border-radius: 4px;
 }
 
@@ -131,10 +122,9 @@ body {
 	display: inline-block;
 	overflow: hidden;
 	text-overflow: ellipsis;
-	padding: 6px;
+	padding: 0px;
 	vertical-align: top;
 	background-color: #fafafa;
-	border: 1px solid #e2e2e2;
 	/* border-radius: 2px; */
 	margin: 10px 12px;
 	transition: all ease-out 0.3s;
@@ -146,18 +136,21 @@ body {
 	background-repeat: no-repeat;
 	background-position: center;
 	background-color: #ffffff;
-	background-image: url(../img/work.jpg);
+	background-image: url(../img/website1.png);
 	background-size: cover;
 }
 
 .work .name {
 	font-size: 14px;
-	text-align: center;
+	text-align: left;
 	line-height: 24px;
-	background-color: rgba(0, 0, 0, 0.49);
 	padding: 5px 0;
-	color: #ffffff;
-	margin-top: -31px;
+	color: #333;
+	margin-top: 0px;
+	border: 1px solid #f3f3f3;
+	border-top: none;
+	padding-left: 10px;
+	background: #fff;
 }
 
 .works a {
@@ -176,6 +169,8 @@ footer {
 	background-color: #263238;
 	color: #ffffff;
 	text-align: center;
+	margin-top: 0px;
+	overflow: hidden;
 }
 
 
@@ -208,7 +203,9 @@ footer {
 }
 
 p {
-    font-size: 14px;
+    font-size: 12px;
+    color: #aaa;
+    line-height: 21px;
 }
 
 .works h2 {
@@ -216,6 +213,9 @@ p {
     font-size: 18px;
     margin-left: 14px;
     margin-bottom: 9px;
+    text-align: center;
+    font-size: 32px;
+    color: #333;
 }
 
 h2 {}
@@ -230,23 +230,23 @@ h2 {}
 }
 
 .members li {
-    width: 70px;
-    height: 70px;
+    width: 260px;
     display: inline-block;
     /* border: 1px solid #ccc; */
     border-radius: 50%;
     margin-right: 12px;
+    text-align: center;
+    margin-bottom: 31px;
 }
 
 ul.members {
     margin-bottom: 31px;
     margin-left: 18px;
-    margin-top: 17px;
+    margin-top: 39px;
 }
 
 .members img {
-    width: 100%;
-    height: 100%;
+    width: 100px;
     border-radius: 50%;
 }
 
@@ -258,6 +258,7 @@ span.icon {
     margin-right: 5px;
     background-size: 100%;
     margin-top: -5px;
+    display: none;
 }
 
 span.icon.group {
@@ -290,4 +291,67 @@ p.vertical-center {
 
 .worksList li:hover {
     box-shadow: -2px 4px 7px 0px rgba(0, 0, 0, 0.25);
+}
+
+.sub {
+    text-align: center;
+    color: #9a9a9a;
+    font-size: 14px;
+}
+
+.members h3 {
+    font-weight: normal;
+    text-align: left;
+    margin-left: 78px;
+    margin-top: 4px;
+    margin-bottom: 8px;
+    color: #333;
+    font-size: 18px;
+}
+
+.subintro {
+    text-align: left;
+    margin-left: 78px;
+    line-height: 21px;
+    font-size: 14px;
+    color: #767676;
+}
+
+.works.grey {
+    background: #fafafa;
+}
+
+html,body {
+    width: 100%;
+    height: 100%;
+    overflow-x: hidden;
+}
+
+ul.worksList {
+    margin-top: 31px;
+}
+
+span.time {
+    float: right;
+    font-size: 12px;
+    color: #aaa;
+    margin-right: 9px;
+}
+
+ul.concat {
+    text-align: left;
+    list-style: none;
+    width: 262px;
+    margin: 0 auto;
+    margin-top: 21px;
+}
+
+ul.concat li {
+    color: #333;
+    line-height: 33px;
+    font-size: 14px;
+}
+
+.concat span {
+    margin-left: 17px;
 }

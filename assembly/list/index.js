@@ -146,7 +146,7 @@ window.onscroll = function(e){
 */
 
 document.addEventListener('scroll', function(e){
-
+    return;
     var top = document.body.scrollTop || window.scrollY || document.documentElement.scrollTop;
 
 
@@ -180,102 +180,68 @@ document.getElementById('submit').onclick = function(){
 (function(){
 
     var json = [                                                                
-        {                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                       
-            img: "../img/University.jpg",
-            name: "武汉大学",
+        {                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                  img: "../img/banner1.jpg",
+            name: "AlloyTeam工作室",
+            school: "武汉大学",
             src: "https://www.baidu.com",
-            intro: "这里是介绍哈哈哈哈"
+            intro: "做地表最强前端工作室",
+            tel: '0755-8387644'
         },
-        {
-            img: "../img/University.jpg",
-            name: "武汉大学",
+        {                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                  img: "../img/cooperation.png",
+            name: "AlloyTeam工作室",
+            school: "武汉大学",
             src: "https://www.baidu.com",
-            intro: "这里是介绍哈哈哈哈"
+            tel: '0755-8387644',
+            intro: "做地表最强前端工作室"
+        },        {                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                  //img: "../img/University.jpg",
+            name: "AlloyTeam工作室",
+            school: "武汉大学",
+            tel: '0755-8387644',
+            src: "https://www.baidu.com",
+            intro: "做地表最强前端工作室"
         },
-        {
-            img: "../img/University.jpg",
-            name: "武汉大学",
+        {                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                  img: "../img/banner1.jpg",
+            name: "AlloyTeam工作室",
+            school: "武汉大学",
             src: "https://www.baidu.com",
-            intro: "这里是介绍哈哈哈哈"
+            intro: "做地表最强前端工作室",
+            tel: '0755-8387644'
         },
-                {
-            img: "../img/University.jpg",
-            name: "武汉大学",
+        {                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                  img: "../img/cooperation.png",
+            name: "AlloyTeam工作室",
+            school: "武汉大学",
             src: "https://www.baidu.com",
-            intro: "这里是介绍哈哈哈哈"
+            tel: '0755-8387644',
+            intro: "做地表最强前端工作室"
+        },        {                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                  //img: "../img/University.jpg",
+            name: "AlloyTeam工作室",
+            school: "武汉大学",
+            tel: '0755-8387644',
+            src: "https://www.baidu.com",
+            intro: "做地表最强前端工作室"
         },
-                {
-            img: "../img/University.jpg",
-            name: "武汉大学",
+        {                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                  img: "../img/banner1.jpg",
+            name: "AlloyTeam工作室",
+            school: "武汉大学",
             src: "https://www.baidu.com",
-            intro: "这里是介绍哈哈哈哈"
+            intro: "做地表最强前端工作室",
+            tel: '0755-8387644'
         },
-                {
-            img: "../img/University.jpg",
-            name: "武汉大学",
+        {                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                  img: "../img/cooperation.png",
+            name: "AlloyTeam工作室",
+            school: "武汉大学",
             src: "https://www.baidu.com",
-            intro: "这里是介绍哈哈哈哈"
-        },
-                {
-            img: "../img/University.jpg",
-            name: "武汉大学",
+            tel: '0755-8387644',
+            intro: "做地表最强前端工作室"
+        },        {                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                  //img: "../img/University.jpg",
+            name: "AlloyTeam工作室",
+            school: "武汉大学",
+            tel: '0755-8387644',
             src: "https://www.baidu.com",
-            intro: "这里是介绍哈哈哈哈"
-        },
-                {
-            img: "../img/University.jpg",
-            name: "武汉大学",
-            src: "https://www.baidu.com",
-            intro: "这里是介绍哈哈哈哈"
-        },
-                {
-            img: "../img/University.jpg",
-            name: "武汉大学",
-            src: "https://www.baidu.com",
-            intro: "这里是介绍哈哈哈哈"
-        },
-                {
-            img: "../img/University.jpg",
-            name: "武汉大学",
-            src: "https://www.baidu.com",
-            intro: "这里是介绍哈哈哈哈"
-        },
-                {
-            img: "../img/University.jpg",
-            name: "武汉大学",
-            src: "https://www.baidu.com",
-            intro: "这里是介绍哈哈哈哈"
-        },
-                {
-            img: "../img/University.jpg",
-            name: "武汉大学",
-            src: "https://www.baidu.com",
-            intro: "这里是介绍哈哈哈哈"
-        },
-                {
-            img: "../img/University.jpg",
-            name: "武汉大学",
-            src: "https://www.baidu.com",
-            intro: "这里是介绍哈哈哈哈"
-        },
-        {
-            img: "../img/University.jpg",
-            name: "武汉大学",
-            src: "https://www.baidu.com",
-            intro: "这里是介绍哈哈哈哈"
-        },  
-        {
-            img: "../img/University.jpg",
-            name: "中国人民解放军防化指挥工程学院",
-            src: "https://www.baidu.com",
-            intro: "这里是介绍哈哈哈哈"
-        },  
-        {
-            img: "../img/University.jpg",
-            name: "武汉大学",
-            src: "https://www.baidu.com",
-            intro: "这里是介绍哈哈哈哈这里是介绍哈哈哈哈这里是介绍哈哈哈哈这里是介绍哈哈哈哈这里是介绍哈哈哈哈这里是介绍哈哈哈哈这里是介绍哈哈哈哈这里是介绍哈哈哈哈这里是介绍哈哈哈哈这里是介绍哈哈"
+            intro: "做地表最强前端工作室"
         }
+
+
     ];
 
     var mask = document.getElementById('mask');
@@ -287,28 +253,47 @@ document.getElementById('submit').onclick = function(){
         var li = document.createElement('li');
         var p = document.createElement('p');
         var p2 = document.createElement('p');
-        var img = document.createElement('img');
+        var img = document.createElement('div');
+        var imgWrapper = document.createElement('div');
+
         var div = document.createElement('div');
+
+        var textWrapper = document.createElement('div');
+
+        textWrapper.setAttribute('class', 'textWrapper');
+        imgWrapper.setAttribute('class', 'imgWrapper');
+        var canvas = Trianglify({width: 365,height: 220}).canvas();
         
         li.className = "list-li";
-        li.appendChild(Trianglify({width: 260,height: 48}).canvas());
 
         img.className = "school-logo";
-        img.draggable = false;
-        img.src = json[i].img;
-        li.appendChild(img);
 
+        img.style.backgroundImage =  'url(' + (json[i].img || canvas.toDataURL()) + ')';
+
+        imgWrapper.appendChild(img);
+        li.appendChild(imgWrapper);
+
+        
         div.className = 'div-cont';
-        div.innerHTML = '<span class="school-name">'+ json[i].name +'</span>';
-        li.appendChild(div);
+        div.innerHTML = `
+                            <h3 class="school-name name">${json[i].name}</h3>
+                            <span class="school-name">Jet</span>
+                            <span class="school-name grey">${json[i].school}</span>
+                            <span class="tel">${json[i].tel}</span>
+                            <p class="school-intro">${json[i].intro}</p>
+                            <a class="link" href="${json[i].src}">Go>></a>
+                        `;
+        textWrapper.appendChild(div);
 
+        /*
         p2.className = "school-str";
         p2.innerHTML = json[i].src;
-        li.appendChild(p2);
+        textWrapper.appendChild(p2);
+        */
 
-        p.className = "school-intro";
-        p.innerHTML = json[i].intro;
-        li.appendChild(p);
+        textWrapper.appendChild(p);
+
+        li.appendChild(textWrapper);
 
         list_ul.appendChild(li);
     } 
