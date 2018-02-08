@@ -1,0 +1,249 @@
+
+<!DOCTYPE html>
+<html lang="zh-cmn-Hans">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1,user-scalable=0">
+    <title>年终奖计算器</title>
+    <style type="text/css">
+        html, body{
+            margin: 0;
+            padding: 0;
+        }
+        h2{
+            font-size: 20px;
+            font-weight: normal;
+            text-align: center;
+        }
+        li{
+            list-style: none;
+            padding: 5px 13px;
+            border-bottom: 1px solid #f1f1f1;
+            margin: 0;
+            color: #585858;
+            font-size: 14px;
+            line-height: 26px;
+        }
+        input{
+            border: 1px solid #d8d8d8;
+            padding: 8px 2px;
+            border-radius: 3px;
+        }
+        label{
+            width: 100px;
+            display: inline-block;
+            color: #333;
+            font-size: 16px;
+        }
+        .block{
+            text-align: center;
+            margin: 10px 0;
+        }
+
+        .button{
+            padding: 5px 14px;
+            border: 1px solid #009dda;
+            display: inline-block;
+            border-radius: 8px;
+            font-size: 18px;
+            color: #313131;
+        }
+        .num{
+            color: #757575;
+        }
+
+        .unit{
+            border: 1px solid #afafaf;
+            border-radius: 3px;
+            /* background: #7d5454; */
+            /* color: #fff; */
+            padding: 1px 5px;
+            display: inline-block;
+            margin: 4px 1px;
+        }
+    .result{
+        display: none;
+    }
+
+    .dircOpt{
+        display: none;
+    }
+
+    .tab{
+      text-align: center;
+      margin: 24px 1px;
+    }
+      
+    </style>
+</head>
+<body>
+
+<h2>年终奖差异计算器</h2>
+
+<div class="tab">
+    <input type="radio" checked id="diff" name="type" />
+    <label for="diff">
+        节省推算
+    </label>
+
+    <input type="radio" id="dire" name="type" />
+    <label for="dire">
+        直输总额
+    </label>
+
+</div>
+<div class="diffOpt" id="diffOpt"">
+    <li>
+    <label>年后发放</label>
+    <input type="number" id="inputYearAfter" />
+</li>
+<li>
+    <label>
+        节省
+    </label>
+    <input type="number" id="inputDe" />
+</li>
+<li>
+    <label>上月个税</label>
+    <input type="number" name="" id="inputTax" />
+</li>
+</div>
+
+<div class="dircOpt" id="dircOpt">
+       <li>
+            <label>总年终奖</label>
+            <input type="number" id="inputYearBonus" />
+        </li>
+
+      <li>
+          <label>上月个税</label>
+          <input type="number" name="" id="inputTax2" />
+      </li>
+    </div>
+
+<div class="block">
+    <div class="button" id="cal">计算</div>
+</div>
+
+<div class="result" id="result">
+    <li>
+        <label>总年终奖</label>
+        <span id="allBonus"></span>
+    </li>
+
+
+    <h2>分两次发放计税方式</h2>
+    <li>
+        <label>年前发放</label>
+        <span id="yearBonus"></span>
+    </li>
+
+    <li>
+        <label>年前所得</label>
+        <span id="yearBonusGet"></span>
+    </li>
+
+    <li>
+        <label>年前计税算法</label>
+        <div>
+            <span class='unit'>平均每月所得<span id="yearBonusGet2"></span> / 12 = <span id="averBonus"></span>
+            </span>
+            * 
+            <span class='unit'>适用税率<span id="yearRate"></span>
+            </span> - 
+            <span class='unit'>
+                速算数<span id="yearDelta"></span>
+            </span>
+            = 
+            <span class='unit'>
+                <span id="yearTax"></span>
+            </span>
+        </div>
+    </li>
+    <li>
+        <label>年后发放</label>
+        <span id="yearAfterBonus"></span>
+    </li>
+    <li>
+        <label>年后所得(含工资一起扣除所有所得）</label>
+        <span id="yearAfterBonusGet"></span>
+    </li>
+    <li>
+        <label>年后计税方法</label>
+        <span class='unit'>
+            <span class='unit'>每月工资缴税计税标准<span id="monthRefer"></span>(已减去3500) </span>
+            + 
+            <span class='unit'>年后发放<span id="yearAfterGet"></span> 
+            </span>
+            = 
+            <span class='unit'>计税总额<span id="yearAfterSum"></span>
+            </span>
+        </span>
+            * 
+            <span class='unit'>计税税率<span id="yearAfterRato"></span>
+        </span>- 
+        <span class='unit'>速算数<span id="yearAfterDelta"></span>
+        </span>
+            = 
+            <span class="unit">
+                <span id="yearAfterTax"></span>
+            </span>
+    </li>
+
+    <li>
+        <label>一共缴税（含工资缴税部分）</label>
+        <span id="allTaxDe"></span>
+    </li>
+
+    <li class="spliter"></li>
+    <h2>一次发放计税方式</h2>
+
+    <li>
+        <label>年前发放</label>
+        <span id="yearBonusNoDe"></span>
+    </li>
+
+    <li>
+        <label>年前所得</label>
+        <span id="yearBonusGetNoDe"></span>
+    </li>
+
+    <li>
+        <label>年前计税算法</label>
+        <div>
+            <span class='unit'>平均每月所得<span id="yearBonusGet2NoDe"></span> / 12 = <span id="averBonusNoDe"></span>
+            </span>
+            * 
+            <span class='unit'>适用税率<span id="yearRateNoDe"></span>
+            </span>
+             - 
+             <span class='unit'>速算数<span id="yearDeltaNoDe"></span>
+         </span>
+            = 
+            <span class='unit'>
+                <span id="yearTaxNoDe"></span>
+            </span>
+        </div>
+    </li>
+
+    <li>
+        <label>年后缴税</label>
+        <span id="monTaxNoDe"></span>
+    </li>
+
+    <div class="spliter"></div>
+
+    <h2>税差值(分-合)</h2>
+
+    <li>
+        <label></label>
+        <span id="taxDelta"></span>
+    </li>
+
+
+
+
+</div>
+<script type="text/javascript" src="cal.js"></script>
+</body>
+</html>
