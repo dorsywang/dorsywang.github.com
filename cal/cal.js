@@ -262,6 +262,7 @@ var set = function(id, text){
 };
 var showResult = function(allBonus, deResult, noDeResult, monRate){
 	document.getElementById('result').style.display = 'block';
+	document.getElementById('note').style.display = 'none';
 
 	set('allBonus', allBonus);
 	set('yearBonus', deResult.yearBeforeBonus);
