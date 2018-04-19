@@ -1,3 +1,4 @@
+var DELTA_YEAR_BEFORE = 20;
 
 var taxRateArr = [
 	[1500, 0.03, 0],
@@ -172,7 +173,7 @@ var cal = function(){
 	for(var i = 0; i < taxRateArr.length; i ++){
 		var item = taxRateArr[i];
 
-		var fakeAllBonus = item[0] * 12 + inputYearAfter;
+		var fakeAllBonus = item[0] * 12 - DELTA_YEAR_BEFORE + inputYearAfter;
 
 		var noDetax = calNoTaxDe(fakeAllBonus);
 		var deTax = calTaxDe(fakeAllBonus, inputTax);
